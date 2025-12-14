@@ -208,21 +208,46 @@
     text-align: center;
 }
 
+.contact-intro {
+    font-size: var(--text-xl);
+    color: var(--text-main);
+    margin-bottom: var(--spacing-2xl);
+    font-weight: var(--weight-medium);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
     align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .contact-item {
     font-size: var(--text-lg);
     color: var(--text-secondary);
+    text-align: center;
+}
+
+.contact-item strong {
+    color: var(--text-main);
+    font-weight: var(--weight-semibold);
+    display: inline-block;
+    min-width: 100px;
 }
 
 .contact-item a {
     color: var(--color-primary);
-    font-weight: var(--weight-semibold);
+    font-weight: var(--weight-medium);
+    transition: color var(--duration-fast) var(--easing);
+}
+
+.contact-item a:hover {
+    color: var(--color-secondary);
 }
 
 /* ========================================
@@ -237,27 +262,64 @@
     margin-top: auto;
 }
 
+.footer .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer-text {
     font-size: var(--text-sm);
     opacity: 0.8;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+    width: 100%;
 }
 
-.footer-links {
+.footer-socials {
     display: flex;
     justify-content: center;
     gap: var(--spacing-lg);
     flex-wrap: wrap;
 }
 
-.footer-link {
-    color: var(--text-light);
-    transition: color var(--duration-fast) var(--easing);
+.footer-social-link {
+    transition: all var(--duration-normal) var(--easing);
+    text-decoration: none;
 }
 
-.footer-link:hover {
-    color: var(--color-accent);
+.footer-social-link:hover {
+    transform: translateY(-4px);
 }
+
+.footer-social-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    font-size: var(--text-xl);
+    font-weight: var(--weight-bold);
+    transition: all var(--duration-normal) var(--easing);
+}
+
+.footer-social-link:hover .footer-social-icon {
+    background: var(--color-gradient);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer-socials {
+        gap: var(--spacing-md);
+    }
+}
+
 
 /* ========================================
    RESPONSIVE - ADAPTACIÓN A MÓVILES

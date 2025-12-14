@@ -1,84 +1,47 @@
 <!DOCTYPE html>
-<!-- DECLARACIÓN: Le dice al navegador que esto es HTML5 -->
-
-<html lang="es">
-
+<html lang="en">
 
 <head>
-
-    
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     
-    <meta name="description" content="Portfolio de Soel Attala - Desarrollador C# .NET especializado en Blazor, ASP.NET Core y PostgreSQL">
-
-    
-    <meta name="keywords" content="Soel Attala, desarrollador C#, .NET, Blazor, ASP.NET Core, PostgreSQL, portfolio">
-    <!-- KEYWORDS: Palabras clave para SEO
-         
-         Menos importante que antes, pero aún útil
-    -->
-    
+    <meta name="description" content="Portfolio of Soel Attala - C# .NET Developer specialized in Blazor, ASP.NET Core and PostgreSQL">
+    <meta name="keywords" content="Soel Attala, C# developer, .NET, Blazor, ASP.NET Core, PostgreSQL, portfolio">
     <meta name="author" content="Soel Attala">
-    <!-- AUTHOR: Autor de la página -->
     
-    <!-- Open Graph (para compartir en redes sociales) -->
-    <meta property="og:title" content="Soel Attala - Desarrollador C# .NET">
-    <meta property="og:description" content="Portfolio personal mostrando proyectos en C#, Blazor y desarrollo web">
+    <meta property="og:title" content="Soel Attala - C# .NET Developer">
+    <meta property="og:description" content="Personal portfolio showcasing projects in C#, Blazor and web development">
     <meta property="og:type" content="website">
-
     
-    <title>Soel Attala - Desarrollador C# .NET</title>
-
+    <title>Soel Attala - C# .NET Developer</title>
     
     <link rel="icon" type="image/png" href="img/favicon.png">
-
     
-    <!-- CSS Files - ORDEN IMPORTANTE -->
     <link rel="stylesheet" href="css/reset.css">
-    <!-- 1. RESET: Primero normaliza los estilos del navegador -->
-    
     <link rel="stylesheet" href="css/variables.css">
-    <!-- 2. VARIABLES: Luego carga las variables (colores, espaciados) -->
-    
     <link rel="stylesheet" href="css/base.css">
-    <!-- 3. BASE: Estilos globales (body, headings, links) -->
-    
     <link rel="stylesheet" href="css/components.css">
-    <!-- 4. COMPONENTS: Componentes reutilizables (botones, cards) -->
-    
     <link rel="stylesheet" href="css/layout.css">
-
 </head>
 
 <body>
-
-    
-<header class="header">
-    <div class="container">
-        <div class="header-profile">
-            <img src="img/Profile.jpg" alt="Soel Attala -   C# .NET Developer" class="header-image">
-            <div class="header-info">
-                <h1 class="header-title">Soel Attala</h1>
-                <p class="header-subtitle">C# .NET Developer</p>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header-profile">
+                <img src="img/Profile.jpg" alt="Soel Attala - C# .NET Developer" class="header-image">
+                <div class="header-info">
+                    <h1 class="header-title">Soel Attala</h1>
+                    <p class="header-subtitle">C# .NET Developer</p>
+                </div>
             </div>
-        </div>
-        
-
             
             <div class="header-links">
                 <a href="https://www.linkedin.com/in/soel-attala" 
                    target="_blank" 
                    rel="noopener noreferrer"
                    class="header-link">
-
-                    
                     <span>LinkedIn</span>
-                    <!-- SPAN: Contenedor inline (no hace nada especial)
-                         Útil para agrupar texto y aplicar estilos
-                    -->
                 </a>
                 
                 <a href="https://github.com/Soel-Attala" 
@@ -88,82 +51,59 @@
                     <span>GitHub</span>
                 </a>
                 
-                <a href="mailto:soelattala@gmail.com" class="header-link">
-                    <!-- mailto: Abre el cliente de email del usuario
-                         NO usa target="_blank" porque no va a otra página
-                    -->
+                <a href="mailto:soelattala7@gmail.com" class="header-link">
                     <span>Email</span>
                 </a>
             </div>
         </div>
     </header>
     
-    <!-- ========================================
-         HERO - SECCIÓN PRINCIPAL
-         ======================================== -->
-    
+    <!-- HERO -->
     <section class="section hero">
-
-        
         <div class="container">
             <h2 class="hero-title">
-                Construyendo soluciones con C# y .NET
+                Building Solutions with C# and .NET
             </h2>
-            <!-- H2: Subtítulo (menos importante que H1) -->
             
             <p class="hero-description">
-                Desarrollador especializado en crear aplicaciones robustas y escalables 
-                con ASP.NET Core, Blazor y PostgreSQL. Apasionado por las buenas prácticas 
-                y la arquitectura limpia.
+                Developer specialized in creating robust and scalable applications 
+                using ASP.NET Core, Blazor, and PostgreSQL. Passionate about best 
+                practices and clean architecture.
             </p>
-            <!-- Descripción breve de quién eres y qué haces -->
             
             <div class="hero-cta">
-                <!-- CTA: Call To Action (llamado a la acción) -->
-                
-                <a href="#proyectos" class="btn btn-primary btn-large">
-
-                    Ver Proyectos
+                <a href="#projects" class="btn btn-primary btn-large">
+                    View Projects
                 </a>
                 
-                <a href="#contacto" class="btn btn-secondary btn-large">
-                    Contacto
+                <a href="#contact" class="btn btn-secondary btn-large">
+                    Contact Me
                 </a>
             </div>
         </div>
     </section>
     
-    <!-- ========================================
-         ABOUT - SOBRE MÍ
-         ======================================== -->
-    
-    <section id="sobre-mi" class="section about">
-
+    <!-- ABOUT -->
+    <section id="about" class="section about">
         <div class="container">
-            <h2 class="section-title">Sobre Mí</h2>
+            <h2 class="section-title">About Me</h2>
             
             <div class="about-content">
                 <p class="about-text">
-                    Soy un desarrollador C# con experiencia en crear aplicaciones web 
-                    utilizando ASP.NET Core y Blazor. Me apasiona escribir código limpio, 
-                    mantenible y siguiendo las mejores prácticas de la industria.
+                    I'm a C# developer with experience in building web applications 
+                    using ASP.NET Core and Blazor. I'm passionate about writing clean, 
+                    maintainable code following industry best practices.
                 </p>
-                <!-- Puedes añadir más párrafos aquí -->
                 
                 <p class="about-text">
-                    Actualmente me especializo en desarrollo full-stack con .NET, 
-                    trabajando con arquitecturas limpias, patrones de diseño y bases 
-                    de datos relacionales como PostgreSQL.
+                    Currently specializing in full-stack development with .NET, 
+                    working with clean architectures, design patterns, and relational 
+                    databases like PostgreSQL.
                 </p>
                 
-                <h3 style="text-align: center; margin-bottom: var(--spacing-lg);">
-                    Tecnologías y Herramientas
-                </h3>
-
+                <h3>Technologies & Tools</h3>
                 
                 <div class="skills">
-                    <!-- Lista de tus habilidades como badges -->
-                    
                     <span class="badge">C#</span>
                     <span class="badge">ASP.NET Core</span>
                     <span class="badge">Blazor</span>
@@ -172,40 +112,32 @@
                     <span class="badge">HTML/CSS</span>
                     <span class="badge">JavaScript</span>
                     <span class="badge">Git</span>
-                    
-                    <!-- Puedes añadir o quitar según tus skills reales -->
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- ========================================
-         PROJECTS - PROYECTOS
-         ======================================== -->
-    
-    <section id="proyectos" class="section projects">
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
         <div class="container">
-            <h2 class="section-title">Proyectos</h2>
+            <h2 class="section-title">Projects</h2>
             <p class="section-subtitle">
-                Algunos de los proyectos en los que he trabajado
+                Some of the projects I've worked on
             </p>
             
             <div class="grid">
-
-                <!-- PROYECTO 1: TurboDeliveryApp -->
+                <!-- Project 1 -->
                 <article class="card project-card">
-
                     <div class="card-img project-image" 
                          style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.5rem;">
                         TurboDeliveryApp
                     </div>
-
                     
                     <h3 class="card-title project-title">TurboDeliveryApp</h3>
                     
                     <p class="card-description project-description">
-                        Sistema de gestión de entregas con Clean Architecture, 
-                        asignación automática de repartidores y seguimiento GPS.
+                        Delivery management system with Clean Architecture, 
+                        automatic courier assignment, and GPS tracking.
                     </p>
                     
                     <div class="project-technologies">
@@ -216,29 +148,28 @@
                     </div>
                     
                     <div class="project-links">
-                        <!-- Cuando tengas el proyecto hosteado, actualiza estos enlaces -->
-                        <a href="#" class="btn btn-primary btn-small">Ver Demo</a>
+                        <a href="#" class="btn btn-primary btn-small">View Demo</a>
                         <a href="https://github.com/Soel-Attala" 
                            target="_blank" 
                            rel="noopener noreferrer"
                            class="btn btn-secondary btn-small">
-                            Ver Código
+                            View Code
                         </a>
                     </div>
                 </article>
                 
-                <!-- PROYECTO 2: Menú QR (proyecto futuro) -->
+                <!-- Project 2 -->
                 <article class="card project-card">
                     <div class="card-img project-image" 
                          style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.5rem;">
-                        Menú Digital QR
+                        Digital Menu QR
                     </div>
                     
-                    <h3 class="card-title project-title">Menú Digital con QR</h3>
+                    <h3 class="card-title project-title">Digital Menu with QR Code</h3>
                     
                     <p class="card-description project-description">
-                        Sistema de menú digital para restaurantes con código QR, 
-                        filtros por categoría y diseño responsive.
+                        Digital menu system for restaurants with QR code, 
+                        category filters, and responsive design.
                     </p>
                     
                     <div class="project-technologies">
@@ -248,23 +179,23 @@
                     </div>
                     
                     <div class="project-links">
-                        <a href="#" class="btn btn-primary btn-small">Ver Demo</a>
-                        <a href="#" class="btn btn-secondary btn-small">Ver Código</a>
+                        <a href="#" class="btn btn-primary btn-small">View Demo</a>
+                        <a href="#" class="btn btn-secondary btn-small">View Code</a>
                     </div>
                 </article>
                 
-                <!-- PROYECTO 3: Página de Cabaña (proyecto futuro) -->
+                <!-- Project 3 -->
                 <article class="card project-card">
                     <div class="card-img project-image" 
                          style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.5rem;">
-                        Alquiler Cabaña
+                        Cabin Rental
                     </div>
                     
-                    <h3 class="card-title project-title">Landing Page Alquiler</h3>
+                    <h3 class="card-title project-title">Rental Landing Page</h3>
                     
                     <p class="card-description project-description">
-                        Página informativa para alquiler de cabañas con galería de fotos, 
-                        información de contacto y ubicación.
+                        Informative page for cabin rental with photo gallery, 
+                        contact information, and location.
                     </p>
                     
                     <div class="project-technologies">
@@ -274,98 +205,94 @@
                     </div>
                     
                     <div class="project-links">
-                        <a href="#" class="btn btn-primary btn-small">Ver Demo</a>
-                        <a href="#" class="btn btn-secondary btn-small">Ver Código</a>
+                        <a href="#" class="btn btn-primary btn-small">View Demo</a>
+                        <a href="#" class="btn btn-secondary btn-small">View Code</a>
                     </div>
                 </article>
-                
-                <!-- Puedes añadir más proyectos copiando el bloque <article> -->
             </div>
         </div>
     </section>
     
-    <!-- ========================================
-         CONTACT - CONTACTO
-         ======================================== -->
-    
-    <section id="contacto" class="section contact">
-        <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <p class="section-subtitle">
-                ¿Tienes un proyecto en mente? ¡Hablemos!
-            </p>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <strong>Email:</strong>
-                    <a href="mailto:soelattala@gmail.com">soelattala@gmail.com</a>
-
-                </div>
-                
-                <div class="contact-item">
-                    <strong>LinkedIn:</strong>
-                    <a href="https://www.linkedin.com/in/soel-attala" 
-                       target="_blank" 
-                       rel="noopener noreferrer">
-                        linkedin.com/in/soel-attala
-                    </a>
-                </div>
-                
-                <div class="contact-item">
-                    <strong>GitHub:</strong>
-                    <a href="https://github.com/Soel-Attala" 
-                       target="_blank" 
-                       rel="noopener noreferrer">
-                        github.com/Soel-Attala
-                    </a>
-                </div>
-                
-                <div class="contact-item">
-                    <strong>Ubicación:</strong> Budapest, Hungría
-                    <!-- Puedes añadir tu ubicación real -->
-                </div>
+ <!-- CONTACT -->
+<section id="contact" class="section contact">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        
+        <p class="contact-intro">
+            Have a project in mind? Let's talk!
+        </p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <strong>Email:</strong>
+                <a href="mailto:soelattala7@gmail.com">soelattala7@gmail.com</a>
             </div>
-        </div>
-    </section>
-    
-    <!-- ========================================
-         FOOTER - PIE DE PÁGINA
-         ======================================== -->
-    
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">
-                &copy; <span id="year"></span> Soel Attala. Todos los derechos reservados.
-  
-            </p>
             
-            <div class="footer-links">
+            <div class="contact-item">
+                <strong>LinkedIn:</strong>
                 <a href="https://www.linkedin.com/in/soel-attala" 
                    target="_blank" 
-                   rel="noopener noreferrer"
-                   class="footer-link">
-                    LinkedIn
-                </a>
-                <a href="https://github.com/Soel-Attala" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   class="footer-link">
-                    GitHub
+                   rel="noopener noreferrer">
+                    linkedin.com/in/soel-attala
                 </a>
             </div>
+            
+            <div class="contact-item">
+                <strong>GitHub:</strong>
+                <a href="https://github.com/Soel-Attala" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    github.com/Soel-Attala
+                </a>
+            </div>
+            
+            <div class="contact-item">
+                <strong>Location:</strong> Budapest, Hungary
+            </div>
         </div>
-    </footer>
+    </div>
+</section>
     
-    <script>
+    <!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p class="footer-text">
+            &copy; <span id="year"></span> Soel Attala. All rights reserved.
+        </p>
+        
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/soel-attala" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="footer-social-link">
+                <div class="footer-social-icon">
+                    <strong>in</strong>
+                </div>
+            </a>
+            
+            <a href="https://github.com/Soel-Attala" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="footer-social-link">
+                <div class="footer-social-icon">
+                    <strong>GH</strong>
+                </div>
+            </a>
+            
+            <a href="mailto:soelattala7@gmail.com" 
+               class="footer-social-link">
+                <div class="footer-social-icon">
+                    <strong>@</strong>
+                </div>
+            </a>
+        </div>
+    </div>
+</footer>
 
-        const yearElement = document.getElementById('year');
-        
-        const currentYear = new Date().getFullYear();
-        
-        
-        yearElement.textContent = currentYear;
-        
-
-    </script>
+<script>
+    const yearElement = document.getElementById('year');
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = currentYear;
+</script>
 </body>
 </html>
