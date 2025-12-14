@@ -1,20 +1,14 @@
 /* ============================================
    BASE STYLES - GLOBAL STYLES
-   ============================================
-   
-   PURPOSE: Define global styles for the body and basic elements.
-   These styles apply to the entire page.
-   
-   C# ANALOGY: Like a base class that all other elements inherit from.
-*/
+   ============================================ */
 
-body{
+body {
     font-family: var(--font-main);
     font-size: var(--text-base);
-    font-weight: var(--weigth-normal);
+    font-weight: var(--weight-normal);
     color: var(--text-main);
     background-color: var(--bg-light);
-    min-height: 100 vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -23,180 +17,169 @@ body{
    HEADINGS - Titles hierarchy
    ======================================== */
 
-h1,h2,h3,h4,h5,h6{
-    font-weight: var(--weigth-bold);
-    line-height:1.2;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--weight-bold);
+    line-height: 1.2;
     color: var(--text-main);
     margin-bottom: var(--spacing-md);
 }
 
 h1 {
     font-size: var(--text-5xl);
-    /* 3rem = 48px - Largest, for main page title */
-    
     margin-bottom: var(--spacing-lg);
-    /* More space below h1 (24px) */
 }
 
 h2 {
     font-size: var(--text-4xl);
-    /* 2.25rem = 36px - Section titles */
 }
 
 h3 {
     font-size: var(--text-3xl);
-    /* 1.875rem = 30px - Subsection titles */
 }
 
 h4 {
     font-size: var(--text-2xl);
-    /* 1.5rem = 24px */
 }
 
 h5 {
     font-size: var(--text-xl);
-    /* 1.25rem = 20px */
 }
 
 h6 {
     font-size: var(--text-lg);
-    /* 1.125rem = 18px - Smallest heading */
 }
-
-
 
 /* ========================================
    PARAGRAPHS AND TEXT
    ======================================== */
 
-   p{
+p {
     margin-bottom: var(--spacing-md);
-    max-width:var(--content-width);
-   }
-   strong{
-    font-weight: var(--weigth-bold);
-   }
+    max-width: var(--content-width);
+}
 
-   em{
+strong {
+    font-weight: var(--weight-bold);
+}
+
+em {
     font-style: italic;
-   }
+}
 
-   small{
+small {
     font-size: var(--text-sm);
-   }
-
+}
 
 /* ========================================
    LINKS - Anchor elements
    ======================================== */
 
-   a{
+a {
     color: var(--color-primary);
     text-decoration: none;
     transition: color var(--duration-fast) var(--easing);
     cursor: pointer;
+}
 
-   }
+a:hover {
+    color: var(--color-secondary);
+}
 
-   a:hover{
-    color:var(--color-secondary);
-   }
-
-   a:focus{
+a:focus {
     outline: 2px solid var(--color-primary);
     outline-offset: 2px;
-    border-radius: var(--raidus-sm);
-   }
+    border-radius: var(--radius-sm);
+}
 
-   ul, ol{
-    margin-bottom:var(--spacing-md);
+/* ========================================
+   LISTS
+   ======================================== */
 
+ul, ol {
+    margin-bottom: var(--spacing-md);
     padding-left: var(--spacing-xl);
-   }
+}
 
-   li{
+li {
     margin-bottom: var(--spacing-xs);
-   }
+}
 
-   ul{
+ul {
     list-style-type: disc;
-   }
+}
 
-   ol{
+ol {
     list-style-type: decimal;
-   }
+}
 
-   /* ========================================
+/* ========================================
    CODE AND PREFORMATTED TEXT
    ======================================== */
 
-   code{
+code {
     font-family: var(--font-code);
     font-size: 0.9em;
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
     padding: 0.2em 0.4em;
-    border-radius: var(--raidus-sm);
-   }
+    border-radius: var(--radius-sm);
+}
 
-   pre{
+pre {
     background-color: var(--bg-dark);
-    color:var(--text-light);
+    color: var(--text-light);
     padding: var(--spacing-lg);
     border-radius: var(--radius-md);
     overflow-x: auto;
     margin-bottom: var(--spacing-lg);
-   }
+}
 
-   pre code{
+pre code {
     background: none;
     padding: 0;
+}
 
-   }
-
-
-   /* ========================================
+/* ========================================
    HORIZONTAL RULE
    ======================================== */
 
-   hr{
+hr {
     border: none;
     height: 1px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     margin: var(--spacing-2xl) 0;
-   }
+}
 
-   /* ========================================
+/* ========================================
    SELECTION (Text highlight)
    ======================================== */
 
-   ::selection{
+::selection {
     background-color: var(--color-primary);
     color: var(--text-white);
-   }
+}
 
-   ::-moz-selection{
+::-moz-selection {
     background-color: var(--color-primary);
     color: var(--text-white);
-
-   }
-
+}
 
 /* ========================================
    SCROLLBAR STYLING (Webkit browsers)
    ======================================== */
-   ::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 12px;
-   }
+}
 
-   ::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: var(--bg-light);
-   }
+}
 
-   ::-webkit-scrollbar-thumb{
-    background: var(--color-secondary);
-   }
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: var(--radius-full);
+}
 
-   ::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
     background: var(--color-secondary);
-    
-   }
+}

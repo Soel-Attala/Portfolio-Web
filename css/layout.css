@@ -1,258 +1,244 @@
 /* ============================================
    LAYOUT - ESTRUCTURA DEL PORTFOLIO
-   ============================================
-   
-   PROPÓSITO: Define la estructura específica del portfolio.
-   Organiza las secciones principales (header, hero, proyectos, footer).
-*/
+   ============================================ */
 
 /* ========================================
    HEADER - CABECERA
    ======================================== */
 
-   .header{
-    background:var(--color-gradient);
-    color:var(--text-white);
-    padding: var(--spacing2xl) var(--spacing-md);
+.header {
+    background: var(--color-gradient);
+    color: var(--text-white);
+    padding: var(--spacing-2xl) var(--spacing-md);
     text-align: center;
+}
 
-   }
-
-   .header-title{
+.header-title {
     font-size: var(--text-5xl);
     font-weight: var(--weight-bold);
     margin-bottom: var(--spacing-sm);
     letter-spacing: -0.02em;
-   }
+}
 
-   .header-subtitle{
+.header-subtitle {
     font-size: var(--text-xl);
     font-weight: var(--weight-normal);
     opacity: 0.95;
     margin-bottom: var(--spacing-xl);
-   }
+}
 
-
-   .header-links{
+.header-links {
     display: flex;
     justify-content: center;
     gap: var(--spacing-lg);
     flex-wrap: wrap;
-   }
+}
 
-   .header-link{
+.header-link {
     display: inline-flex;
     align-items: center;
     gap: var(--spacing-xs);
     padding: var(--spacing-sm) var(--spacing-md);
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-md);
+    color: var(--text-white);
     text-decoration: none;
     transition: all var(--duration-normal) var(--easing);
     font-weight: var(--weight-medium);
-   }    
+}
 
-   .header-link:hover{
-    background-color: rgba(255,255,255,0.2);
-    transform:(translateY(-2px));
+.header-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
 
-   }
-
-   /* ========================================
+/* ========================================
    HERO - SECCIÓN PRINCIPAL
    ======================================== */
 
-   .hero{
+.hero {
     padding: var(--spacing-3xl) var(--spacing-md);
     text-align: center;
     background: linear-gradient(180deg, var(--bg-light) 0%, var(--bg-card) 100%);
+}
 
-   }
-
-   .hero-title{
+.hero-title {
     font-size: var(--text-4xl);
     font-weight: var(--weight-bold);
     margin-bottom: var(--spacing-lg);
     color: var(--text-main);
-   }
+}
 
-   .hero-description{
-    font-size: var(--text-secondary);
+.hero-description {
+    font-size: var(--text-lg);
     color: var(--text-secondary);
     max-width: 600px;
-    margin: 0 auto var(--spacing2xl);
-    line-height: 1,6;
-   }
+    margin: 0 auto var(--spacing-2xl);
+    line-height: 1.6;
+}
 
-   .hero-cta{
+.hero-cta {
     display: flex;
     justify-content: center;
     gap: var(--spacing-md);
     flex-wrap: wrap;
-   }
-
+}
 
 /* ========================================
    ABOUT - SECCIÓN "SOBRE MÍ"
    ======================================== */
 
-   .about{
+.about {
     background-color: var(--bg-card);
-   }
-   .about-content{
+}
+
+.about-content {
     max-width: 800px;
     margin: 0 auto;
-   }
+}
 
-   .about-text{
+.about-text {
     font-size: var(--text-base);
     line-height: 1.8;
     margin-bottom: var(--spacing-xl);
-   }
+}
 
-   .skills{
+.skills {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-sm);
     justify-content: center;
-   }
+}
 
-   /* ========================================
+/* ========================================
    PROJECTS - SECCIÓN DE PROYECTOS
    ======================================== */
 
-   .projects{
+.projects {
     background-color: var(--bg-light);
-   }
-   .projects-grid{
+}
 
-   }
-
-   .project-card{
-
-   }
-
-   .project-image{
-
-   }
-
-   .project-description{
-
-   }
-
-   .project-technologies{
+.project-technologies {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-xs);
     margin-bottom: var(--spacing-md);
+}
 
-   }
-
-   .project-links{
+.project-links {
     display: flex;
     gap: var(--spacing-sm);
     flex-wrap: wrap;
-   }
+}
 
-   /* ========================================
+/* ========================================
    CONTACT - SECCIÓN DE CONTACTO
    ======================================== */
 
-   .contact{
+.contact {
     background-color: var(--bg-card);
     text-align: center;
+}
 
-   }
-
-   .contact-info{
+.contact-info {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
     align-items: center;
-   }
+}
 
-   .contact-item{
+.contact-item {
     font-size: var(--text-lg);
     color: var(--text-secondary);
-   }
+}
 
-   .contact-item a{
+.contact-item a {
     color: var(--color-primary);
     font-weight: var(--weight-semibold);
-   }
+}
 
-   /* ========================================
+/* ========================================
    FOOTER - PIE DE PÁGINA
    ======================================== */
 
-   .footer{
+.footer {
     background-color: var(--bg-dark);
     color: var(--text-light);
-    padding: var(--spacing-xl) var(--spacing-md);
+    padding: var(--spacing-2xl) var(--spacing-md);
     text-align: center;
     margin-top: auto;
-   }
+}
 
-   .footer-text{
+.footer-text {
     font-size: var(--text-sm);
     opacity: 0.8;
     margin-bottom: var(--spacing-md);
-   }
+}
 
-   .footer-links{
+.footer-links {
     display: flex;
     justify-content: center;
     gap: var(--spacing-lg);
     flex-wrap: wrap;
-   }
+}
 
-   .footer-link{
+.footer-link {
     color: var(--text-light);
     transition: color var(--duration-fast) var(--easing);
-   }
+}
 
-   .footer-link:hover{
+.footer-link:hover {
     color: var(--color-accent);
-   }
+}
 
-   /* ========================================
+/* ========================================
    RESPONSIVE - ADAPTACIÓN A MÓVILES
    ======================================== */
 
-   @media (min-width: 768px){
-    .header-title{
+@media (min-width: 768px) {
+    .header-title {
         font-size: var(--text-5xl);
     }
-
-    .hero-title{
+    
+    .hero-title {
+        font-size: var(--text-5xl);
+    }
+    
+    .hero-description {
         font-size: var(--text-xl);
     }
-
-    .section-title{
+    
+    .section-title {
         font-size: var(--text-5xl);
     }
+}
 
-   }
-
-   @media(max-width: 480px){
-    .header-title{
+@media (max-width: 480px) {
+    .header-title {
         font-size: var(--text-3xl);
     }
-    .header-subtitle{
+    
+    .header-subtitle {
         font-size: var(--text-base);
     }
-    .hero-title{
+    
+    .hero-title {
+        font-size: var(--text-2xl);
+    }
+    
+    .hero-cta {
         flex-direction: column;
     }
-
-    .btn{
+    
+    .btn {
         width: 100%;
     }
-    .header-links{
+    
+    .header-links {
         flex-direction: column;
-
     }
-    .header-link{
+    
+    .header-link {
         width: 100%;
     }
-   }
+}

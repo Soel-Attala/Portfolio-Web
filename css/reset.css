@@ -1,57 +1,58 @@
-*{
+/* ============================================
+   RESET CSS - NORMALIZACIÓN DE ESTILOS
+   ============================================ */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-html{
-    font-size: 16px;
-    /*
-    1 rem = 16px
-    2 rem = 32px
-    0.5 rem = 8px
-    */
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
+html {
+    font-size: 16px;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased; /*for safari, chrome, edge*/
-    -moz-osx-font-smoothing: graysacle;/*for firefox*/
-
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 img,
-video,
 picture,
+video,
 canvas,
-svg{
+svg {
     display: block;
     max-width: 100%;
     height: auto;
 }
+
 input,
 button,
 textarea,
-select{
+select {
     font: inherit;
 }
 
-button{
+button {
     cursor: pointer;
     background: none;
-    border:none;
-
+    border: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
 ul,
-ol{
+ol {
     list-style: none;
 }
