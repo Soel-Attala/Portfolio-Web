@@ -13,18 +13,54 @@
     text-align: center;
 }
 
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.header-profile {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform var(--duration-normal) var(--easing);
+    flex-shrink: 0;
+}
+
+.header-image:hover {
+    transform: scale(1.05);
+}
+
+.header-info {
+    text-align: left;
+}
+
 .header-title {
     font-size: var(--text-5xl);
     font-weight: var(--weight-bold);
     margin-bottom: var(--spacing-sm);
     letter-spacing: -0.02em;
+    line-height: 1.1;
 }
 
 .header-subtitle {
     font-size: var(--text-xl);
     font-weight: var(--weight-normal);
     opacity: 0.95;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: 0;
+    line-height: 1.4;
 }
 
 .header-links {
@@ -32,6 +68,7 @@
     justify-content: center;
     gap: var(--spacing-lg);
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .header-link {
@@ -45,11 +82,32 @@
     text-decoration: none;
     transition: all var(--duration-normal) var(--easing);
     font-weight: var(--weight-medium);
+    font-size: var(--text-base);
 }
 
 .header-link:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .header-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-info {
+        text-align: center;
+    }
+    
+    .header-title {
+        font-size: var(--text-3xl);
+    }
+    
+    .header-subtitle {
+        font-size: var(--text-base);
+    }
 }
 
 /* ========================================
@@ -95,12 +153,22 @@
 .about-content {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 var(--spacing-md);
 }
 
 .about-text {
     font-size: var(--text-base);
     line-height: 1.8;
     margin-bottom: var(--spacing-xl);
+    text-align: center;
+}
+
+.about h3 {
+    text-align: center;
+    margin: var(--spacing-2xl) 0 var(--spacing-xl);
+    color: var(--text-main);
+    font-size: var(--text-2xl);
+    font-weight: var(--weight-bold);
 }
 
 .skills {
