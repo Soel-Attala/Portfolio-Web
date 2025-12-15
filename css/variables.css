@@ -103,25 +103,27 @@
     --z-fixed: 300;
     --z-modal: 400;
     --z-tooltip: 500;
+}
 
-
-    /* ========================================
+/* ========================================
    DARK MODE - MODO OSCURO
    ======================================== */
 
 [data-theme="dark"] {
+    /* Colores de texto invertidos */
     --text-main: #ecf0f1;
     --text-secondary: #bdc3c7;
-    --text-light: #2c3e50;
+    --text-light: rgba(255, 255, 255, 0.7);
     --text-white: #ffffff;
     
+    /* Fondos oscuros */
     --bg-light: #1a1a2e;
     --bg-dark: #16213e;
     --bg-card: #0f3460;
     
+    /* Colores de estado */
     --color-success: #2ecc71;
     --color-error: #e74c3c;
     --color-warning: #f39c12;
     --color-info: #3498db;
-}
 }

@@ -493,6 +493,16 @@
 [data-theme="dark"] .timeline-dot {
     border-color: var(--bg-light);
 }
+/* Añadir DESPUÉS de la sección DARK MODE - AJUSTES */
+
+[data-theme="dark"] .form-group input::placeholder,
+[data-theme="dark"] .form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="dark"] .section-subtitle {
+    color: var(--text-secondary);
+}
 
 /* ========================================
    RESPONSIVE - ADAPTACIÓN A MÓVILES
@@ -605,4 +615,6 @@
     .header-link {
         width: 100%;
     }
+
+    
 }

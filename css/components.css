@@ -181,3 +181,13 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-xl);
 }
+
+
+
+/* ========================================
+   DARK MODE - COMPONENT ADJUSTMENTS
+   ======================================== */
+
+[data-theme="dark"] .badge {
+    background-color: rgba(102, 126, 234, 0.2);
+}
