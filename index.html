@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TGBBX268S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-4TGBBX268S');
+    </script>
+    
     <meta name="description" content="Portfolio of Soel Attala - C# .NET Developer specialized in Blazor, ASP.NET Core and PostgreSQL">
     <meta name="keywords" content="Soel Attala, C# developer, .NET, Blazor, ASP.NET Core, PostgreSQL, portfolio">
     <meta name="author" content="Soel Attala">
@@ -267,20 +276,9 @@
         <div class="container">
             <h2 class="section-title animate-on-scroll fade-in-up">Contact</h2>
             
-<<<<<<< HEAD
             <p class="contact-intro animate-on-scroll fade-in-up delay-100">
                 Have a project in mind? Let's talk!
             </p>
-=======
-            <div class="contact-item">
-                <strong>LinkedIn:</strong>
-                <a href="https://www.linkedin.com/in/soel-antonio-attala/" 
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                    linkedin.com/in/soel-attala
-                </a>
-            </div>
->>>>>>> 8654debad10863576d83269976528be87c24f815
             
             <div class="contact-wrapper">
                 <!-- Contact Info -->
@@ -339,29 +337,11 @@
     </section>
     
     <!-- FOOTER -->
-<<<<<<< HEAD
     <footer class="footer">
         <div class="container">
             <p class="footer-text">
                 &copy; <span id="year"></span> Soel Attala. All rights reserved.
             </p>
-=======
-<footer class="footer">
-    <div class="container">
-        <p class="footer-text">
-            &copy; <span id="year"></span> Soel Attala. All rights reserved.
-        </p>
-        
-        <div class="footer-socials">
-            <a href="https://www.linkedin.com/in/soel-antonio-attala/" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="footer-social-link">
-                <div class="footer-social-icon">
-                    <strong>in</strong>
-                </div>
-            </a>
->>>>>>> 8654debad10863576d83269976528be87c24f815
             
             <div class="footer-socials">
                 <a href="https://www.linkedin.com/in/soel-attala" 
@@ -392,7 +372,40 @@
         </div>
     </footer>
     
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+    </button>
+    
     <!-- SCRIPTS -->
+    <script>
+        // Theme Toggle - Modo Oscuro/Claro
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('.theme-icon');
+        const htmlElement = document.documentElement;
+        
+        // Verificar si hay un tema guardado
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        htmlElement.setAttribute('data-theme', currentTheme);
+        themeIcon.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+        
+        // Alternar tema
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+            
+            // Pequeña animación
+            themeToggle.style.transform = 'rotate(360deg)';
+            setTimeout(() => {
+                themeToggle.style.transform = '';
+            }, 300);
+        });
+    </script>
+    
     <script>
         // Año dinámico
         const yearElement = document.getElementById('year');
@@ -414,7 +427,6 @@
             });
         }, observerOptions);
 
-        // Observar todos los elementos con clase animate-on-scroll
         document.querySelectorAll('.animate-on-scroll').forEach(el => {
             observer.observe(el);
         });
