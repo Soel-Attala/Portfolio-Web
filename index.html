@@ -15,13 +15,14 @@
     
     <title>Soel Attala - C# .NET Developer</title>
     
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body>
@@ -61,17 +62,17 @@
     <!-- HERO -->
     <section class="section hero">
         <div class="container">
-            <h2 class="hero-title">
+            <h2 class="hero-title animate-on-scroll fade-in-up">
                 Building Solutions with C# and .NET
             </h2>
             
-            <p class="hero-description">
+            <p class="hero-description animate-on-scroll fade-in-up delay-100">
                 Developer specialized in creating robust and scalable applications 
                 using ASP.NET Core, Blazor, and PostgreSQL. Passionate about best 
                 practices and clean architecture.
             </p>
             
-            <div class="hero-cta">
+            <div class="hero-cta animate-on-scroll fade-in-up delay-200">
                 <a href="#projects" class="btn btn-primary btn-large">
                     View Projects
                 </a>
@@ -86,16 +87,16 @@
     <!-- ABOUT -->
     <section id="about" class="section about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title animate-on-scroll fade-in-up">About Me</h2>
             
             <div class="about-content">
-                <p class="about-text">
+                <p class="about-text animate-on-scroll fade-in-up">
                     I'm a C# developer with experience in building web applications 
                     using ASP.NET Core and Blazor. I'm passionate about writing clean, 
                     maintainable code following industry best practices.
                 </p>
                 
-                <p class="about-text">
+                <p class="about-text animate-on-scroll fade-in-up delay-100">
                     Currently specializing in full-stack development with .NET, 
                     working with clean architectures, design patterns, and relational 
                     databases like PostgreSQL.
@@ -117,17 +118,65 @@
         </div>
     </section>
     
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll fade-in-up">Experience</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll fade-in-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Present</div>
+                        <h3 class="timeline-title">C# .NET Developer</h3>
+                        <div class="timeline-company">Freelance</div>
+                        <p class="timeline-description">
+                            Developing web applications using ASP.NET Core, Blazor, and PostgreSQL. 
+                            Specializing in clean architecture and best practices.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item animate-on-scroll fade-in-right delay-100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <h3 class="timeline-title">Full-Stack Developer</h3>
+                        <div class="timeline-company">Personal Projects</div>
+                        <p class="timeline-description">
+                            Built TurboDeliveryApp with Clean Architecture, automatic courier 
+                            assignment, and GPS tracking using .NET and PostgreSQL.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item animate-on-scroll fade-in-left delay-200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <h3 class="timeline-title">Software Development</h3>
+                        <div class="timeline-company">Learning & Practice</div>
+                        <p class="timeline-description">
+                            Intensive study of C#, .NET ecosystem, design patterns, and 
+                            software architecture principles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- PROJECTS -->
     <section id="projects" class="section projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <p class="section-subtitle">
+            <h2 class="section-title animate-on-scroll fade-in-up">Projects</h2>
+            <p class="section-subtitle animate-on-scroll fade-in-up delay-100">
                 Some of the projects I've worked on
             </p>
             
             <div class="grid">
                 <!-- Project 1 -->
-                <article class="card project-card">
+                <article class="card project-card animate-on-scroll fade-in-up">
                     <div class="card-img project-image" 
                          style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.5rem;">
                         TurboDeliveryApp
@@ -159,7 +208,7 @@
                 </article>
                 
                 <!-- Project 2 -->
-                <article class="card project-card">
+                <article class="card project-card animate-on-scroll fade-in-up delay-100">
                     <div class="card-img project-image" 
                          style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.5rem;">
                         Digital Menu QR
@@ -185,7 +234,7 @@
                 </article>
                 
                 <!-- Project 3 -->
-                <article class="card project-card">
+                <article class="card project-card animate-on-scroll fade-in-up delay-200">
                     <div class="card-img project-image" 
                          style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.5rem;">
                         Cabin Rental
@@ -213,86 +262,133 @@
         </div>
     </section>
     
- <!-- CONTACT -->
-<section id="contact" class="section contact">
-    <div class="container">
-        <h2 class="section-title">Contact</h2>
-        
-        <p class="contact-intro">
-            Have a project in mind? Let's talk!
-        </p>
-        
-        <div class="contact-info">
-            <div class="contact-item">
-                <strong>Email:</strong>
-                <a href="mailto:soelattala7@gmail.com">soelattala7@gmail.com</a>
-            </div>
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll fade-in-up">Contact</h2>
             
-            <div class="contact-item">
-                <strong>LinkedIn:</strong>
-                <a href="https://www.linkedin.com/in/soel-attala" 
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                    linkedin.com/in/soel-attala
-                </a>
-            </div>
+            <p class="contact-intro animate-on-scroll fade-in-up delay-100">
+                Have a project in mind? Let's talk!
+            </p>
             
-            <div class="contact-item">
-                <strong>GitHub:</strong>
-                <a href="https://github.com/Soel-Attala" 
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                    github.com/Soel-Attala
-                </a>
-            </div>
-            
-            <div class="contact-item">
-                <strong>Location:</strong> Budapest, Hungary
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info animate-on-scroll fade-in-left">
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:soelattala7@gmail.com">soelattala7@gmail.com</a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <strong>LinkedIn:</strong>
+                        <a href="https://www.linkedin.com/in/soel-attala" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            linkedin.com/in/soel-attala
+                        </a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <strong>GitHub:</strong>
+                        <a href="https://github.com/Soel-Attala" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            github.com/Soel-Attala
+                        </a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <strong>Location:</strong> Budapest, Hungary
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <form class="contact-form animate-on-scroll fade-in-right" 
+                      action="https://formspree.io/f/YOUR_FORM_ID" 
+                      method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                </form>
             </div>
         </div>
-    </div>
-</section>
+    </section>
     
     <!-- FOOTER -->
-<footer class="footer">
-    <div class="container">
-        <p class="footer-text">
-            &copy; <span id="year"></span> Soel Attala. All rights reserved.
-        </p>
-        
-        <div class="footer-socials">
-            <a href="https://www.linkedin.com/in/soel-attala" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="footer-social-link">
-                <div class="footer-social-icon">
-                    <strong>in</strong>
-                </div>
-            </a>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                &copy; <span id="year"></span> Soel Attala. All rights reserved.
+            </p>
             
-            <a href="https://github.com/Soel-Attala" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="footer-social-link">
-                <div class="footer-social-icon">
-                    <strong>GH</strong>
-                </div>
-            </a>
-            
-            <a href="mailto:soelattala7@gmail.com" 
-               class="footer-social-link">
-                <div class="footer-social-icon">
-                    <strong>@</strong>
-                </div>
-            </a>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/soel-attala" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="footer-social-link">
+                    <div class="footer-social-icon">
+                        <strong>in</strong>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/Soel-Attala" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="footer-social-link">
+                    <div class="footer-social-icon">
+                        <strong>GH</strong>
+                    </div>
+                </a>
+                
+                <a href="mailto:soelattala7@gmail.com" 
+                   class="footer-social-link">
+                    <div class="footer-social-icon">
+                        <strong>@</strong>
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+    
+    <!-- SCRIPTS -->
+    <script>
+        // Año dinámico
+        const yearElement = document.getElementById('year');
+        const currentYear = new Date().getFullYear();
+        yearElement.textContent = currentYear;
+        
+        // Animaciones al scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
-<script>
-    const yearElement = document.getElementById('year');
-    const currentYear = new Date().getFullYear();
-    yearElement.textContent = currentYear;
-</script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observar todos los elementos con clase animate-on-scroll
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>

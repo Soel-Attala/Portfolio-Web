@@ -1,0 +1,80 @@
+/* ============================================
+   ANIMATIONS - ANIMACIONES
+   ============================================ */
+
+/* Fade In Up - Elemento aparece desde abajo */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Left - Elemento aparece desde la izquierda */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade In Right - Elemento aparece desde la derecha */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Elementos que se animan al hacer scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transition: none;
+}
+
+.animate-on-scroll.animated {
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-in-up.animated {
+    animation-name: fadeInUp;
+}
+
+.fade-in-left.animated {
+    animation-name: fadeInLeft;
+}
+
+.fade-in-right.animated {
+    animation-name: fadeInRight;
+}
+
+/* Delays para efecto escalonado */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+}
